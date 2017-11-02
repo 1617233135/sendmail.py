@@ -3,8 +3,8 @@ import email.mime.multipart
 import email.mime.text
 
 msg=email.mime.multipart.MIMEMultipart()
-msg['frmom']='1479510302@qq.com'
-msg['to']='107837234@qq.com'
+msg['frmom']='13236093861@163.com'
+msg['to']='147951030@qq.com'
 msg['subject']='test'
 content='''''
     你好，
@@ -18,6 +18,6 @@ msg.attach(txt)
 smtp=smtplib
 smtp=smtplib.SMTP()
 smtp.connect('smtp.qq.com','25')
-smtp.login('14795103.2@qq.com','zxy510302')
-smtp.sendmail('1479510302@qq.com','107837234@qq.com',str(msg))
+smtp.login('13236093861@163.com','zxy510302')
+smtp.sendmail('13236093861@163.com','1479510302@qq.com',str(msg))
 smtp.quit()
