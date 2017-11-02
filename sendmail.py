@@ -17,7 +17,7 @@ msg.attach(txt)
 
 smtp=smtplib
 smtp=smtplib.SMTP()
-smtp.connect('smtp.qq.com','25')
+smtp.connect('smtp.163.com','25')
 smtp.login('13236093861@163.com','zxy510302')
 smtp.sendmail('13236093861@163.com','1479510302@qq.com',str(msg))
 smtp.quit()
